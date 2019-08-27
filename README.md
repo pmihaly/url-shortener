@@ -20,7 +20,7 @@
 
 ## Projektről
 
-Az egyszerű URL rövidítő backend segítségével ismerkedtem a Redis caching-rendszerrel.
+Az egyszerű URL rövidítő backend segítségével ismerkedtem meg a Redis caching-rendszerrel.
 
 ### Ezzel készült
 
@@ -74,8 +74,6 @@ A fejlesztői build elkészülését követően az alkalmazást a `5000`-es port
 <!-- Végleges build -->
 
 ## Végleges build
-
-A production buildhez [Docker](https://www.docker.com)t használunk, hogy ne kelljen sokat macerálni a telepítésekkel.
 
 ### Kellékek
 
