@@ -1,0 +1,15 @@
+version: "2.1"
+
+services:
+  url-shortener:
+    image: url-shortener
+    build: .
+    environment:
+      NODE_ENV: production
+      PORT: 80
+    ports:
+      - 80:80
+    links:
+      - redis:redis
+  redis:
+    image: "redis:alpine"
