@@ -16,6 +16,15 @@ app.use(express.json());
 
 app.post("/", (req, res) => {
   const { url } = req.body;
+
+  if (
+    !url.match(
+      /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/
+    )
+  ) {
+    res.status(400).send("URL not looking like an URL :(");
+  }
+
   const shortUrl = uuidv4();
 
   client.set(shortUrl, url, (err, reply) => {
