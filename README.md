@@ -7,8 +7,8 @@
 ## Tartalomjegyzék
 
 - [Projektről](#projektről)
-- [Használat](#használat)
   - [Ezzel készült](#ezzel-készült)
+- [API használata](#api-használata)
 - [Fejlesztési környezet létrehozása](#fejlesztési-környezet-létrehozása)
   - [Kellékek](#kellékek)
   - [Telepítés](#telepítés)
