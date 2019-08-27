@@ -15,10 +15,10 @@ const app = express();
 app.use(express.json());
 
 app.post("/", (req, res) => {
-  const longUrl = req.body;
+  const { url } = req.body;
   const shortUrl = uuidv4();
 
-  client.set(shortUrl, longUrl, (err, reply) => {
+  client.set(shortUrl, url, (err, reply) => {
     if (reply === "OK") {
       res.send(shortUrl);
     }
